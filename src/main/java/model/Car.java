@@ -1,41 +1,41 @@
 package model;
 
 public class Car {
-    private static long id;
-    private static String model;
-    private static int series;
-    private static int year;
+    private long id;
+    private String model;
+    private int series;
+    private int year;
 
-    public static long getId() {
+    public long getId() {
         return id;
     }
 
-    public static void setId(long id) {
-        Car.id = id;
+    public void setId(long id) {
+        this.id = id;
     }
 
-    public static int getYear() {
+    public int getYear() {
         return year;
     }
 
-    public static void setYear(int year) {
-        Car.year = year;
+    public void setYear(int year) {
+        this.year = year;
     }
 
-    public static String getModel() {
+    public String getModel() {
         return model;
     }
 
-    public static void setModel(String model) {
-        Car.model = model;
+    public void setModel(String model) {
+        this.model = model;
     }
 
-    public static int getSeries() {
+    public int getSeries() {
         return series;
     }
 
-    public static void setSeries(int series) {
-        Car.series = series;
+    public void setSeries(int series) {
+        this.series = series;
     }
 
     public Car() {

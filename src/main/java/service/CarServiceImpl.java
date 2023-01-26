@@ -1,10 +1,7 @@
 package service;
 
-import dao.CarDAO;
 import dao.CarDaoImpl;
 import model.Car;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,9 +14,9 @@ public class CarServiceImpl implements CarService {
     }
 
     @Override
-    public List<Car> show(int numberToShow) {
+    public List<Car> getNumOfCars(int numberToShow) {
 
-        return carDAO.show(numberToShow);
+        return carDAO.getNumOfCars(numberToShow);
     }
 
 }
